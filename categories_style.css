@@ -1,0 +1,1040 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --backgraound: #E6D9D0;
+    --border: #DDC5B2;
+    --text: #6F2B25;
+    --button: #CA7062;
+    --color: #EBEAEA;
+    --shadaw: rgba(110, 110, 110, 0.9);
+}
+
+/*............... Header ...............*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 38px 90px;
+    z-index: 1000;
+    background-color: #f6eae2;
+    box-shadow: 0 2px 9px #999999;
+}
+
+header .navigation1 a{
+    padding: 20px 25px ;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .navigation1 a:hover{
+    color: var(--button);
+}
+
+/*.............. Logo ...............*/
+header .logoo img {
+    width: 170px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .line img{
+    width: 60px;
+    height: 70px;
+    right: 10%;
+    top: 13%;
+    position: absolute;
+}
+
+/*.................... Button ..................*/
+.LogIn{
+    background-color: var(--button);
+    color: var(--backgraound);
+    transition: .6s ease;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 7px var(--shadaw);
+    position: absolute;
+    right: 20px;
+}
+
+.LogIn:hover{
+    cursor: pointer;
+    background-color: var(--text);
+    color: white;
+}
+
+/*................... Main Section ......................*/
+.Main_Section{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f6eae2;
+}
+
+/*................... Main headers ......................*/
+
+.heading, .heading1{
+    color: var(--text);
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*.........................................*/
+
+/*................... Searching header ...................*/
+
+/*.................... Searching ......................*/
+
+.searching{
+    top: 0;
+    display: flex;
+    background-color: var(--border);
+    border-radius: 50px;
+    box-shadow: 0 2px 7px var(--shadaw);
+    margin: 3% 25%;
+}
+
+.searching .navigation2{
+    padding: 12px 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.searching .navigation2 a {
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 60px; /* Adjust the top and bottom padding as needed */
+    padding-right: 90px;
+    margin-right: 30px;
+}
+
+
+.searching img{
+    width: 60px;
+    height: 40px;
+    background-color: var(--border);
+}
+
+.searching ion-icon{
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--border);
+    color: var(--button);
+}
+
+.dropdown .date{
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--border);
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+/* .dropdown .date::-webkit-calendar-picker-indicator {
+    color: var(--text);
+} */
+  
+  /* Style for the date picker when a user hovers over it */
+/* .dropdown .date:hover { */
+    /* Add a box shadow when hovering (optional) */
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+
+/* } */
+
+.dropdown select {
+    width: 200px; /* Set the width of the dropdown */
+    padding: 10px; /* Add some padding for better appearance */
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--border);
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Style for the dropdown when it is focused */
+/* .dropdown select:focus {
+border-color: #007bff; 
+
+} */
+
+/*................... Search Button ...................*/
+
+.search{ /* Button Search */
+    background-color: var(--button);
+    color: var(--backgraound);
+    transition: .6s ease;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 2%;
+    padding: 10px 40px;
+    margin: 12px 0px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 7px var(--shadaw)
+}
+
+.search:hover{
+    cursor: pointer;
+    background-color: var(--text);
+    color: white;
+}
+
+/*......................................*/
+
+/*.................. Categories Section ................*/
+.Categories_type{
+    min-height: 200vh;
+}
+/*...................Health and Wellness ...............*/
+
+/*........................... Heading .......................*/
+
+.Health_Wellness .head .heading{
+    margin-left: 30px;
+    width: 410px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Health_Wellness {
+    position: relative;
+}
+
+.Health_Wellness .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Health_Wellness .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Health_Wellness .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Health_Wellness .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Health_Wellness .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Health_Wellness .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Health_Wellness .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Health_Wellness .swiper .swiper-button-next,
+.Health_Wellness .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Health_Wellness .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Health_Wellness .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Health_Wellness .swiper .swiper-button-next:hover,
+.Health_Wellness .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+/*........................ Education and training ....................*/
+/*........................... Heading .......................*/
+
+.Education_Training .head .heading{
+    margin-left: 30px;
+    width: 470px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Education_Training {
+    position: relative;
+}
+
+.Education_Training .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Education_Training .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Education_Training .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Education_Training .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Education_Training .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Education_Training .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Education_Training .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Education_Training .swiper .swiper-button-next,
+.Education_Training .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Education_Training .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Education_Training .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Education_Training .swiper .swiper-button-next:hover,
+.Education_Training .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+/*....................Business_Strategy ...........................*/
+/*........................... Heading .......................*/
+
+.Business_Strategy .head .heading{
+    margin-left: 30px;
+    width: 450px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Business_Strategy {
+    position: relative;
+}
+
+.Business_Strategy .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Business_Strategy .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Business_Strategy .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Business_Strategy .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Business_Strategy .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Business_Strategy .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Business_Strategy .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Business_Strategy .swiper .swiper-button-next,
+.Business_Strategy .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Business_Strategy .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Business_Strategy .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Business_Strategy .swiper .swiper-button-next:hover,
+.Business_Strategy .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+
+/*.................... Arts and Craft ..................*/
+/*........................... Heading .......................*/
+
+.Arts_Craft .head .heading{
+    margin-left: 30px;
+    width: 290px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Arts_Craft {
+    position: relative;
+}
+
+.Arts_Craft .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Arts_Craft .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Arts_Craft .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Arts_Craft .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Arts_Craft .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Arts_Craft .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Arts_Craft .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Arts_Craft .swiper .swiper-button-next,
+.Arts_Craft .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Arts_Craft .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Arts_Craft .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Arts_Craft .swiper .swiper-button-next:hover,
+.Arts_Craft .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+
+/*.................. Science and Research .................*/
+/*........................... Heading .......................*/
+
+.Science_Research .head .heading{
+    margin-left: 30px;
+    width: 428px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Science_Research {
+    position: relative;
+}
+
+.Science_Research .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Science_Research .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Science_Research .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Science_Research .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Science_Research .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Science_Research .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Science_Research .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Science_Research .swiper .swiper-button-next,
+.Science_Research .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Science_Research .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Science_Research .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Science_Research .swiper .swiper-button-next:hover,
+.Science_Research .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+
+/*.................. Industial Engineering .................*/
+/*........................... Heading .......................*/
+
+.Industrial_Engineering .head .heading{
+    margin-left: 30px;
+    width: 445px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Industrial_Engineering {
+    position: relative;
+}
+
+.Industrial_Engineering .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Industrial_Engineering .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Industrial_Engineering .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Industrial_Engineering .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Industrial_Engineering .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Industrial_Engineering .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Industrial_Engineering .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Industrial_Engineering .swiper .swiper-button-next,
+.Industrial_Engineering .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Industrial_Engineering .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Industrial_Engineering .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Industrial_Engineering .swiper .swiper-button-next:hover,
+.Industrial_Engineering .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+
+/*................... Sports and Travel .................*/
+
+/*........................... Heading .......................*/
+
+.Sports_Travel .head .heading{
+    margin-left: 30px;
+    width: 357px;
+    padding: 10px;
+    background-color: #d7cbc2;
+}
+
+/*.......................... Swiper .....................*/
+
+
+.Sports_Travel {
+    position: relative;
+}
+
+.Sports_Travel .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 70px 14%;
+}
+
+.Sports_Travel .swiper-slide {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+}
+
+.Sports_Travel .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.Sports_Travel .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border:2.4px solid #6F2B25;
+    color: #999999;
+    font-size: 18px;
+    background-color: var(--color);
+    padding-bottom: 80px;
+}
+
+.Sports_Travel .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.Sports_Travel .swiper-slide .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Sports_Travel .swiper-slide .row .Location{
+    margin: 20px;
+    display: block;
+    width: 10%;
+}
+
+/* ..................... Buttons ....................*/
+
+.Sports_Travel .swiper .swiper-button-next,
+.Sports_Travel .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
+}
+
+.Sports_Travel .swiper .swiper-button-next{
+    right: 10%;
+}
+
+.Sports_Travel .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Sports_Travel .swiper .swiper-button-next:hover,
+.Sports_Travel .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
+
+/*..........................................*/
+
+/*.................... More Information .................*/
+
+.more{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.more .sec .imgage{
+    display: flex;
+}
+
+.more .sec .imgage img{
+    width: 38%;
+    height: 20%;
+    margin-top: 5%;
+}
+
+.more .sec .inform {
+    display: flex;
+}
+
+.more .sec .inform .col1 .texttt {
+    font-size: 22px;
+    color: #CA7062;
+    font-weight: 600;
+    text-align: center;
+    margin: 20% 0;
+    margin-top: 10%;
+}
+
+.more .sec .inform .col1 .foll{
+    font-size: 27px;
+    color: #CA7062;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.more .sec .inform .col1 .follow{
+    display: flex;
+    background-color: #d7cbc2;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.more .sec .inform .col1 .follow img{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    transition: .7s ease;
+}
+
+.more .sec .inform .col1 .follow img:hover {
+    cursor: pointer;
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+}
+
+.more .sec .inform .col2{
+    display: flex;
+    margin-left: 80px;
+}
+
+.more .sec .inform .col2 img{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.more .sec .inform .col2 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+    border-radius: 20%;
+}
+
+.more .sec .inform .col2 p{
+    font-size: 26px;
+    color: #CA7062;
+    font-weight: 500;
+}
+
+.more .sec .inform .col2 .col21 .col211{
+    margin-right: 90px;
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col212{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col213{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col221{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col222{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col223{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col224{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col214{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+/*...................................................*/
