@@ -6,3 +6,9 @@ This website has 7 interfaces that was I belt with them.
 
 It is the overview about the Red Sand's website which shows all the services that can help you for organizing the events.
 
+<img src="Home Page.png" width = 580 height = 310>
+
+This page contains services which is:
+
+#### 1) About Us.
+
