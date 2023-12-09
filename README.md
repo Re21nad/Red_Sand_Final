@@ -12,3 +12,6 @@ This page contains services which is:
 
 #### 1) About Us.
 
+<img src="About us.png" width = 540 height = 390>
+
+#### 2) Categories.
