@@ -15,6 +15,8 @@ This page contains services which is:
 
 #### 2) Categories.
 
+<img src="Categories.png" width = 540 height = 390>
+
 #### 3) Services.
 
 #### 4) Our Clients.
