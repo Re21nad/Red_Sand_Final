@@ -15,7 +15,7 @@ This page contains services which is:
 
 #### 2) Categories.
 
-<img src="Categories.png" width = 540 height = 390>
+<img src="Categories.png" width = 570 height = 390>
 
 #### 3) Services.
 
